@@ -1,6 +1,6 @@
 # ClonVercel Test Lab — `test-vue-vite`
 
-Aplicación Vue 3 de prueba, versión **v0.1.0**, para validar la detección de frameworks, la instalación de dependencias, la compilación, la publicación de archivos estáticos y la actualización mediante Git en ClonVercel.
+Aplicación Vue 3 de prueba, versión **v0.2.0**, para validar la detección de frameworks, la instalación de dependencias, la compilación, la publicación de archivos estáticos y la actualización mediante Git en ClonVercel.
 
 ## Objetivo
 
@@ -31,7 +31,7 @@ La aplicación permite gestionar tareas en el navegador:
 La identificación del despliegue aparece en la interfaz:
 
 - Nombre `test-vue-vite`
-- Versión `v0.1.0`
+- Versión `v0.2.0`
 - Framework Vue 3
 - Rama Git
 - Identificador del commit
@@ -77,7 +77,7 @@ Copiar `.env.example` a `.env.local` si se quiere probar la inyección local. Du
 
 ```bash
 VITE_APP_NAME=test-vue-vite
-VITE_APP_VERSION=v0.1.0
+VITE_APP_VERSION=v0.2.0
 VITE_GIT_BRANCH=
 VITE_GIT_COMMIT=
 VITE_BUILD_DATE=
@@ -149,5 +149,5 @@ Las pruebas comprueban:
 
 ## Versión
 
-- Aplicación: `v0.1.0`
+- Aplicación: `v0.2.0`
 - Commit: `No disponible`

@@ -1,5 +1,5 @@
 export const APP_NAME = "test-vue-vite";
-export const APP_VERSION = "v0.1.0";
+export const APP_VERSION = "v0.2.0";
 export const APP_FRAMEWORK = "Vue 3";
 export const UNAVAILABLE = "No disponible";
 

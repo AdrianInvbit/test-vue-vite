@@ -137,10 +137,10 @@ describe("metadatos", () => {
     const wrapper = mountApp();
 
     expect(wrapper.get("#app-name").text()).toBe("test-vue-vite");
-    expect(wrapper.get("#app-version").text()).toBe("v0.1.0");
+    expect(wrapper.get("#app-version").text()).toBe("v0.2.0");
     expect(wrapper.get("#app-framework").text()).toBe("Vue 3");
     expect(wrapper.get("#deploy-name").text()).toBe("test-vue-vite");
-    expect(wrapper.get("#deploy-version").text()).toBe("v0.1.0");
+    expect(wrapper.get("#deploy-version").text()).toBe("v0.2.0");
     expect(wrapper.get("#deploy-framework").text()).toBe("Vue 3");
     expect(wrapper.get("#deploy-branch").text()).toBe("No disponible");
     expect(wrapper.get("#deploy-commit").text()).toBe("No disponible");

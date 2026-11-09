@@ -54,7 +54,7 @@ describe("estructura del proyecto", () => {
     const viteConfig = readProjectFile("vite.config.ts");
 
     expect(packageJson.name).toBe("test-vue-vite");
-    expect(packageJson.version).toBe("0.1.0");
+    expect(packageJson.version).toBe("0.2.0");
     expect(packageJson.scripts.dev).toBe("vite");
     expect(packageJson.scripts.build).toContain("vite build");
     expect(packageJson.scripts.preview).toBe("vite preview");
@@ -82,12 +82,12 @@ describe("estructura del proyecto", () => {
 describe("metadatos de despliegue", () => {
   it("usa valores conocidos de la aplicación y No disponible si faltan variables Git", () => {
     expect(APP_NAME).toBe("test-vue-vite");
-    expect(APP_VERSION).toBe("v0.1.0");
+    expect(APP_VERSION).toBe("v0.2.0");
     expect(APP_FRAMEWORK).toBe("Vue 3");
 
     const emptyMeta = getDeployMeta({} as ImportMetaEnv);
     expect(emptyMeta.name).toBe("test-vue-vite");
-    expect(emptyMeta.version).toBe("v0.1.0");
+    expect(emptyMeta.version).toBe("v0.2.0");
     expect(emptyMeta.framework).toBe("Vue 3");
     expect(emptyMeta.branch).toBe(UNAVAILABLE);
     expect(emptyMeta.commit).toBe(UNAVAILABLE);
@@ -97,7 +97,7 @@ describe("metadatos de despliegue", () => {
   it("incorpora las variables VITE_* cuando existen", () => {
     const meta = getDeployMeta({
       VITE_APP_NAME: "test-vue-vite",
-      VITE_APP_VERSION: "v0.1.0",
+      VITE_APP_VERSION: "v0.2.0",
       VITE_GIT_BRANCH: "main",
       VITE_GIT_COMMIT: "abc1234",
       VITE_BUILD_DATE: "2026-10-30T12:00:00Z",
